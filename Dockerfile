@@ -35,4 +35,4 @@ COPY --from=build /opt/app/build/cv.html cv.html
 
 VOLUME /opt/app
 
-LABEL maintainer="Alexander <adidas3poloski777@mail.ru>"
+LABEL maintainer="Kirill <krill123321@gmail.com>"
