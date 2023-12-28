@@ -12,7 +12,7 @@ categories:
     Cloud
 
 skills:
-- name: python
+- name: C++
   level: middle
   category: *lang # this is YAML alias
   labels:
