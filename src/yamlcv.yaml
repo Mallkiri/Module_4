@@ -2,9 +2,9 @@
 # https://github.com/haath/yaml-cv
 
 details:
-  first_name: Name
-  last_name: Lastname
-  title: DevOps engineer
+  first_name: Кирилл
+  last_name: Малыгин
+  title: Студент
 
 profile: |
   Focused, energetic and motivated to learn DevOps.
