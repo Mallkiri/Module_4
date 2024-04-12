@@ -12,3 +12,4 @@ jobs:
     steps:
       - uses: docker/build-push-action@v5
       - name: Docker image
+        run: buid --file Dockerfile
