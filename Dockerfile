@@ -13,6 +13,8 @@ RUN gem install yaml-cv
 
 WORKDIR /opt/app
 
+RUN apk add openssl
+
 RUN wget https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/${YQ_BINARY} -O /usr/bin/yq &&\
     chmod +x /usr/bin/yq
 
