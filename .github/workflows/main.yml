@@ -17,4 +17,4 @@ jobs:
           file: ./app/Dockerfile
           push: true
           tags: myimage:latest
-          outputs: type=docker,dest=/tmp/myimage.tar 
+          outputs: type=docker,dest=/tmp/myimage.tar
