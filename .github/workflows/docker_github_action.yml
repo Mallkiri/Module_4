@@ -7,10 +7,9 @@ on:
     branches: [main]   
     
 jobs:
-  
-      build:
-        runs-on: alpine:3.14
-      steps: 
-      - uses: docker/buid-push-action@v5
-      - name: Build_Image
-        run: docker-build . --file Dockerfile --tag my-image name:${date+%s}
+  build:
+    runs-on: alpine:3.14
+    steps:
+      - uses: docker/build-push-action@v5
+      - name: Docker image
+        run: docker buid . --file Dockerfile --tag my-image name:$(date+%s)
