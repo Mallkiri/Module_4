@@ -1,0 +1,16 @@
+name: Github_action
+
+on:  
+  push:
+    branches: [main]
+  pull_request:  
+    branches: [main]   
+    
+jobs:
+  
+      build:
+        runs-on: alpine:3.14
+      steps: 
+      - uses: docker/buid-push-action@v5
+      - name: Build_Image
+        run: docker-build . --file Dockerfile --tag my-image name:${date+%s}
