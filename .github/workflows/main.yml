@@ -12,9 +12,3 @@ jobs:
     steps:
       - uses: docker/build-push-action@v5
       - name: Docker image
-        with:
-          context: .
-          file: .Dockerfile
-          push: true
-          tags: myimage:latest
-          outputs: type=docker,dest=/tmp/myimage.tar
